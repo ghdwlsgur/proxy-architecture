@@ -20,11 +20,6 @@
 > - `설정` - `고급 설정 표시` - `프록시 설정 변경` - `프록시 서버 IP와 Port 설정`
 
 
-
-
-
-
-
 ### Squid 설치 및 설정
 `sudo yum update -y`
 
@@ -86,6 +81,19 @@ http_access deny deny_dst
 
 - squid 기본 설정에서는 http에서만 에러페이지가 호스팅되는 모양이다. 
 - 다음번에 직접 https에서도 에러페이지를 호스팅 하도록 커스텀해봐야겠다.
+
+
+
+### /etc/squid 목록들
+- `cachemgr.conf`
+- `cachemgr.conf.default`
+- `errorpage.css`
+- `errorpage.css.default`
+- `mime.conf`
+- `mime.conf.default`
+- `squid.conf`
+- `squid.conf.default`
+
 
 스퀴드와 프록시 서버의 개념에 대해서 정리해보자.
 ### 스퀴드(Squid)란 ?
